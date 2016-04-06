@@ -31,5 +31,17 @@ int main()
 	double n;
 	scanf("%lf", &n);
 
+	if (n == 0)
+	{
+		printf("0\n");
+		return 0;
+	}
+
+	if (n < 0)
+	{
+		printf("Não existe raiz de número negativo nos REAIS\n");
+		return 0;
+	}
+
 	printf("%.2f\n", raizq(n));
 }
