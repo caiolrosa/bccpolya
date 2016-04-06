@@ -2,17 +2,19 @@
 
 double mod(double a, double b)
 {
-	double result = a-b;
+	double resultado = a - b;
 	
-	if(result < 0)
-		result *= -1;
+	if(resultado < 0)
+	{
+		resultado *= -1;
+	}
 		
-	return result;
+	return resultado;
 }
 
 double raizq(double n)
 {
-        double aproximacao = 0.01;
+        double precisao = 0.01;
         double valor1 = 1.0;
         double valor2 = 0;
         do
@@ -20,7 +22,7 @@ double raizq(double n)
             valor2 = valor1;
             valor1 = (valor1 + (n/valor1))/2;
             
-        } while (mod(valor1, valor2) > aproximacao);
+        } while (mod(valor1, valor2) > precisao);
         return valor1;
 }
 
