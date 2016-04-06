@@ -88,4 +88,4 @@ Pelo exemplo percebemos que na iteração 1, o valor2 guardou o novo valor de va
 
 * Justificativa do uso do termo "polya" no nome do repositório
 
-George Polya foi um matemático que escreveu cinco livros ("How to solve it") falando sobre a resolução e modelagem de problemas, deste dado tiramos o nome do repositório.
+George Polya foi um matemático que escreveu cinco livros ("How to solve it") falando sobre a resolução e modelagem de problemas. Polya descreveu 4 passos importantes para a resolução e modelagem de um problema, sendo esses respectivamente: compreender o problema, planejar sua resolução, executar o plano e examinar a solução. Para que pudessemos resolver o problema tivemos que compreender o problema, modelar o problema matemáticamente, fazer o código e analisar nossos resultados, assim passamos pelos passos propostos por George Polya, assim justificando o nome do repositório.
