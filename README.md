@@ -35,7 +35,8 @@ valor2 = 3,464285714 / 2
 valor2 = 1,732142857
 ```
 
-Pelo exemplo percebemos que na iteração 1, o valor2 guardou o novo valor de valor1 que é 2. Utilizamos então o novo valor1 na segunda iteração e ao final teremos um novo valor1 que será novamente armazenado em valor2 e 	assim sucessivamente até que se obtenha o resultado final.
+
+Pelo exemplo percebemos que na iteração 1, o valor2 guardou o novo valor de valor1 que é 2. Utilizamos então o novo valor1 na segunda iteração e ao final teremos um novo valor1 que será novamente armazenado em valor2 e assim sucessivamente até que se obtenha o resultado final.
 
 
 * Apresentação da solução em Portugues Estruturado
@@ -44,35 +45,37 @@ Pelo exemplo percebemos que na iteração 1, o valor2 guardou o novo valor de va
   algoritmo "raiz quadrada"
 
   função mod(a : real, b : real) : real
-  Inicio
-  resultado : real;
-  resultado := a - b;
-  se(resultado < 0)
-  resultado = resultado * -1;
-  fim-se
-  retorne resultado;
+  Início
+  	resultado : real;
+  	resultado := a - b;
+  	se(resultado < 0)
+  		resultado = resultado * -1;
+  	fim-se
+  	retorne resultado;
   Fim
 
   função raizq(n : real)
   Inicio
-  precisao : real;
-  precisao := 0.01;
+  	precisao : real;
+  	precisao := 0.01;
 
-  valor1 : real;
-  valor 1 := 1.0;
+  	valor1 : real;
+  	valor 1 := 1.0;
 
-  valor2 : real;
-  valor2 := 1.0;
-
+  	valor2 : real;
+  	valor2 := 1.0;
+  Fim
+  
   faça
-  valor2 = valor1;
-  valor1 = (valor1 + (n/valor1))/2;     
-  enquanto (mod(valor1, valor2) > precisao);
+  Início
+  	valor2 = valor1;
+  	valor1 = (valor1 + (n/valor1))/2;     
+  	enquanto (mod(valor1, valor2) > precisao);
 
-  retorne valor1;
+  	retorne valor1;
   Fim
 
-  Inicio
+  Início
   real : n;
   leia(n);
 
